@@ -23,3 +23,5 @@ logs
 .env.*
 !.env.example
 /.vscode
+server/db/shortcuts.json
+/server/db
