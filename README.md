@@ -1,7 +1,11 @@
 # Raidash
 
-Raidash is a simple and intuitive dashboard designed for being a futurustic, highly stylized homepage. Built with Nuxt 3 and styled using Tailwind CSS, it provides statistics and streamlines the creation and deletion of shortcuts, complete with icon and image support.
+Raidash is a simple and intuitive dashboard designed for being a futuristic, highly stylized homepage. Built with Nuxt 3 and styled using Tailwind CSS, it provides statistics and streamlines the creation and deletion of shortcuts, complete with icon and image support.
 
+
+![Screenshot](./screenshot.png)
+
+  
 ## Features
 
 - **Stats**: Monitor your UnRaid server's basic stats with fresh data.
