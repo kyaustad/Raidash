@@ -1,0 +1,51 @@
+@import "tailwindcss" theme(static);
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Public Sans", sans-serif;
+  --font-sixtyfour: "Sixtyfour", sans-serif;
+  --font-monoton: "Monoton", sans-serif;
+}
+
+:root {
+  --ui-bg: oklch(0.91 0.01 188.1);
+}
+
+.light {
+  --ui-bg: oklch(0.91 0.01 188.1);
+}
+
+.dark {
+  --ui-bg: oklch(0.2 0.01 248.08);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.bg-animated {
+  background: linear-gradient(
+    300deg,
+    oklch(0.91 0.01 188.1) 40%,
+    oklch(0.91 0.16 149.51 / 0.8) 50%,
+    oklch(0.91 0.01 188.1) 60%
+  );
+  background-size: 200% 100%;
+  animation: gradient 15s linear infinite;
+}
+
+.dark .bg-animated {
+  background: linear-gradient(
+    300deg,
+    oklch(0.2 0.01 248.08) 40%,
+    oklch(0.34 0.08 150.49) 50%,
+    oklch(0.2 0.01 248.08) 60%
+  );
+  background-size: 200% 100%;
+  animation: gradient 15s linear infinite;
+}
