@@ -18,6 +18,11 @@ Raidash uses the unraid-api which is currently part of the Unraid Connect plugin
 
 When installing via Docker, such as on UnRaid, the environment variables needed are: UNRAID_KEY and UNRAID_URL. UNRAID_KEY is the API key generated from the unraid-api and the UNRAID_URL is the full http/https included address of your Unraid server. The default Port is 3000 so when deploying via Docker, map that port as needed.
 
+To install in Unraid, go to the Docker tab and click Add Container. For the repository put: `ghcr.io/kyaustad/raidash:latest`
+
+Then add a PORT and two VARIABLES and populate with your UNRAID_KEY and UNRAID_API
+![Screenshot](./unraid-docker.png)
+
 - **Viewing Stats**: The dashboard displays real-time statistics of your UnRaid server on the main screen.
 - **Managing Shortcuts**: Use the provided forms to add new shortcuts or remove existing ones.
 - **Customizing Icons**: Select icons from the extensive collection available in the [selfh.st/icons](https://github.com/selfhst/icons) repository to personalize your shortcuts.
