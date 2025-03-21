@@ -1,75 +1,29 @@
-# Nuxt UI Starter
+# Raidash
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+Raidash is a simple and intuitive dashboard designed for managing your UnRaid server. Built with Nuxt 3 and styled using Tailwind CSS, it provides real-time statistics and streamlines the creation and deletion of shortcuts, complete with icon and image support.
 
-## Setup
+## Features
 
-Make sure to install the dependencies:
+- **Stats**: Monitor your UnRaid server's basic stats with fresh data.
+- **Shortcut Management**: Easily create and delete shortcuts to your favorite applications and services.
+- **Icon & Image Support**: Customize your shortcuts with a wide array of icons and images.
+- **Light & Dark Mode**: Supports light and dark mode in a highly stylized look. I kinda hate the light mode right now tbh...
 
-```bash
-# npm
-npm install
+## Usage
+Raidash uses the unraid-api which is currently part of the Unraid Connect plugin for Unraid. To find details on how to set it up and get an API key see this: [Unraid-API](https://docs.unraid.net/API/how-to-use-the-api/)
 
-# pnpm
-pnpm install
+When installing via Docker, such as on UnRaid, the environment variables needed are: UNRAID_KEY and UNRAID_URL. UNRAID_KEY is the API key generated from the unraid-api and the UNRAID_URL is the full http/https included address of your Unraid server.
 
-# yarn
-yarn install
+- **Viewing Stats**: The dashboard displays real-time statistics of your UnRaid server on the main screen.
+- **Managing Shortcuts**: Use the provided forms to add new shortcuts or remove existing ones.
+- **Customizing Icons**: Select icons from the extensive collection available in the [selfh.st/icons](https://github.com/selfhst/icons) repository to personalize your shortcuts.
 
-# bun
-bun install
-```
+## Credits
 
-## Development Server
+Raidash utilizes icons from the [selfh.st/icons](https://github.com/selfhst/icons) collection, maintained by the selfh.st team. These icons are used under the [MIT License](https://github.com/selfhst/icons/blob/main/LICENSE).
 
-Start the development server on `http://localhost:3000`:
+## License
 
-```bash
-# npm
-npm run dev
+Raidash is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-# pnpm
-pnpm run dev
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
