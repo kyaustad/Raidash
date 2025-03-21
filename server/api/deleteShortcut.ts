@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import type { Shortcut } from "~~/types/shortcut";
 
-const filePath = path.resolve("server/db/shortcuts.json");
+const filePath = path.resolve("public/db/shortcuts.json");
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
