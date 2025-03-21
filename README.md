@@ -16,7 +16,7 @@ Raidash is a simple and intuitive dashboard designed for being a futuristic, hig
 ## Usage
 Raidash uses the unraid-api which is currently part of the Unraid Connect plugin for Unraid. To find details on how to set it up and get an API key see this: [Unraid-API](https://docs.unraid.net/API/how-to-use-the-api/)
 
-When installing via Docker, such as on UnRaid, the environment variables needed are: UNRAID_KEY and UNRAID_URL. UNRAID_KEY is the API key generated from the unraid-api and the UNRAID_URL is the full http/https included address of your Unraid server.
+When installing via Docker, such as on UnRaid, the environment variables needed are: UNRAID_KEY and UNRAID_URL. UNRAID_KEY is the API key generated from the unraid-api and the UNRAID_URL is the full http/https included address of your Unraid server. The default Port is 3000 so when deploying via Docker, map that port as needed.
 
 - **Viewing Stats**: The dashboard displays real-time statistics of your UnRaid server on the main screen.
 - **Managing Shortcuts**: Use the provided forms to add new shortcuts or remove existing ones.
